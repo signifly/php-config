@@ -21,5 +21,6 @@ return PhpCsFixer\Config::create()
         'no_unused_imports' => true,
         'not_operator_with_successor_space' => true,
         'trailing_comma_in_multiline_array' => true,
+        'concat_space' => ['spacing' => 'none'],
     ])
     ->setFinder($finder);
