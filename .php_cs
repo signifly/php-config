@@ -1,5 +1,17 @@
 <?php
 
+$rules = [
+    '@PSR2' => true,
+    'array_syntax' => ['syntax' => 'short'],
+    'blank_line_after_namespace' => true,
+    'blank_line_after_opening_tag' => true,
+    'ordered_imports' => ['sortAlgorithm' => 'length'],
+    'no_unused_imports' => true,
+    'not_operator_with_successor_space' => true,
+    'trailing_comma_in_multiline_array' => true,
+    'concat_space' => ['spacing' => 'none'],
+];
+
 $finder = Symfony\Component\Finder\Finder::create()
     ->notPath('vendor')
     ->notPath('bootstrap')
@@ -12,15 +24,5 @@ $finder = Symfony\Component\Finder\Finder::create()
     ->ignoreVCS(true);
 
 return PhpCsFixer\Config::create()
-    ->setRules([
-        '@PSR2' => true,
-        'array_syntax' => ['syntax' => 'short'],
-        'blank_line_after_namespace' => true,
-        'blank_line_after_opening_tag' => true,
-        'ordered_imports' => ['sortAlgorithm' => 'length'],
-        'no_unused_imports' => true,
-        'not_operator_with_successor_space' => true,
-        'trailing_comma_in_multiline_array' => true,
-        'concat_space' => ['spacing' => 'none'],
-    ])
+    ->setRules($rules)
     ->setFinder($finder);
