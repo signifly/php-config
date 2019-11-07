@@ -5,7 +5,7 @@ $rules = [
     'array_syntax' => ['syntax' => 'short'],
     'blank_line_after_namespace' => true,
     'blank_line_after_opening_tag' => true,
-    'ordered_imports' => ['sortAlgorithm' => 'length'],
+    'ordered_imports' => ['sort_algorithm' => 'alpha'],
     'no_unused_imports' => true,
     'not_operator_with_successor_space' => true,
     'trailing_comma_in_multiline_array' => true,
