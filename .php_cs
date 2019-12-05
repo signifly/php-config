@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * Laravel Coding Style.
+ *
+ * Reference: https://gist.github.com/laravel-shift/cab527923ed2a109dda047b97d53c200
+ */
 use PhpCsFixer\Config;
 use PhpCsFixer\Finder;
 
