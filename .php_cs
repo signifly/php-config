@@ -82,6 +82,7 @@ $rules = [
     'no_trailing_whitespace' => true,
     'no_trailing_whitespace_in_comment' => true,
     'no_unneeded_control_parentheses' => true,
+    'no_unused_imports' => true,
     'no_unreachable_default_argument_value' => true,
     'no_useless_return' => true,
     'no_whitespace_before_comma_in_array' => true,
