@@ -1,0 +1,13 @@
+{
+    "name": "signifly/php-config",
+    "description": "Signifly PHP Config",
+    "license": "MIT",
+    "require": {
+        "friendsofphp/php-cs-fixer": "^2.0"
+    },
+    "autoload": {
+        "files": [
+            "./src/helpers.php"
+        ]
+    }
+}
