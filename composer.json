@@ -6,9 +6,6 @@
         "friendsofphp/php-cs-fixer": "^2.0"
     },
     "autoload": {
-        "psr-4": {
-            "Signifly\\": "src/"
-        },
         "files": [
             "./src/helpers.php"
         ]
