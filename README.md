@@ -24,10 +24,10 @@ Install the package by pulling it in from Composer:
 composer require signifly/php-config --dev
 ```
 
-Then update the `.php_cs.dist` file:
+Then update the `.php-cs-fixer.php` file:
 
 ```php
-$finder = PhpCsFixer\Finder::create()
+$finder = (new PhpCsFixer\Finder)
     ->notPath('bootstrap')
     ->notPath('storage')
     ->notPath('vendor')
