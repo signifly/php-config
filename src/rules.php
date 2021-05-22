@@ -35,7 +35,7 @@ return [
     'linebreak_after_opening_tag' => true,
     'line_ending' => true,
     'lowercase_cast' => true,
-    'lowercase_constants' => true,
+    'constant_case' => ['case' => 'lower'],
     'lowercase_keywords' => true,
     'lowercase_static_reference' => true, // added from Symfony
     'magic_method_casing' => true, // added from Symfony
@@ -85,10 +85,10 @@ return [
     'ordered_imports' => ['sort_algorithm' => 'alpha'],
     'phpdoc_indent' => true,
     'general_phpdoc_tag_rename' => [
-        'fix_annotations' => true,
-        'fix_inlne' => true,
+        'fix_annotation' => true,
+        'fix_inline' => true,
         'case_sensitive' => false,
-        'replacements' => []
+        'replacements' => [],
     ],
     'phpdoc_no_access' => true,
     'phpdoc_no_package' => true,
