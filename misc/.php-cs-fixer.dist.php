@@ -130,7 +130,7 @@ $rules = [
     'whitespace_after_comma_in_array' => true,
 ];
 
-$finder = Finder::create()
+$finder = (new Finder)
     ->notPath('bootstrap')
     ->notPath('storage')
     ->notPath('vendor')
@@ -143,7 +143,7 @@ $finder = Finder::create()
     ->ignoreDotFiles(true)
     ->ignoreVCS(true);
 
-return Config::create()
+return (new Config)
     ->setFinder($finder)
     ->setRules($rules)
     ->setRiskyAllowed(true)
